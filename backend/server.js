@@ -9,11 +9,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Punch API running successfully");
+/* API test */
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API working" });
 });
 
-/* Serve Frontend Build */
+/* Serve React build */
 const frontendPath = path.join(__dirname, "../frontend/build");
 app.use(express.static(frontendPath));
 
