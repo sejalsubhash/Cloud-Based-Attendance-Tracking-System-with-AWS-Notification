@@ -16,10 +16,12 @@ app.get("/api/test", (req, res) => {
 
 /* Serve React build */
 const frontendPath = path.join(__dirname, "../frontend/build");
+
 app.use(express.static(frontendPath));
 
+/* React routing fix */
 app.get("*", (req, res) => {
-  res.sendFile(path.join(frontendPath, "index.html"));
+  res.sendFile(path.resolve(frontendPath, "index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
