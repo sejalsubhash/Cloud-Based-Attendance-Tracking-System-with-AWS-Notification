@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
+require("dotenv").config();
+
 const punchRoutes = require("./routes/punch");
 
 const app = express();
@@ -9,11 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-/* API Routes */
-
 app.use("/", punchRoutes);
-
-/* Serve React Frontend */
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
