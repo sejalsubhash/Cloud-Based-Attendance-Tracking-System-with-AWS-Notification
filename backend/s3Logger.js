@@ -8,7 +8,7 @@ const date = new Date().toISOString().split("T")[0];
 
 await s3.putObject({
 
-Bucket:process.env.S3_BUCKET,
+Bucket:process.env.S3_BUCKET_NAME,
 Key:`${date}/${Date.now()}.json`,
 Body:JSON.stringify(data)
 

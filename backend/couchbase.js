@@ -1,10 +1,10 @@
 const couchbase = require("couchbase");
 
 const cluster = new couchbase.Cluster(
-process.env.COUCHBASE_CONN,
+process.env.COUCHBASE_CONNECTION_STRING,
 {
-username:process.env.COUCHBASE_USER,
-password:process.env.COUCHBASE_PASS
+username:process.env.COUCHBASE_USERNAME,
+password:process.env.COUCHBASE_PASSWORD
 }
 );
 
