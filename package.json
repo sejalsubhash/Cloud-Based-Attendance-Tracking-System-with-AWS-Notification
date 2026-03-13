@@ -1,5 +1,5 @@
 {
-  "name": "team-punch-system",
+  "name": "punch-in-app",
   "version": "1.0.0",
   "main": "backend/server.js",
   "scripts": {
