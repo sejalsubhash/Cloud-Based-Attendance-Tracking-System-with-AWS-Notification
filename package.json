@@ -12,7 +12,7 @@
   "dependencies": {
     "aws-sdk": "^2.1530.0",
     "cors": "^2.8.5",
-    "couchbase": "^4.3.0",
+    "couchbase": "4.2.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "uuid": "^9.0.0"
