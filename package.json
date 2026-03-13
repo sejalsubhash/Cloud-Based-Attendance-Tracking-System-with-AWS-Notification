@@ -1,0 +1,17 @@
+{
+  "name": "team-punch-system",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1530.0",
+    "cors": "^2.8.5",
+    "couchbase": "^4.3.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}
