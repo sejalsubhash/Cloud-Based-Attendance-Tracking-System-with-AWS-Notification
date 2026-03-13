@@ -6,6 +6,9 @@
     "start": "node backend/server.js",
     "build": "cd frontend && npm install && npm run build"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "aws-sdk": "^2.1530.0",
     "cors": "^2.8.5",
